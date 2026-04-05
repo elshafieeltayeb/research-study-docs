@@ -1,0 +1,73 @@
+# Optional: set after the repo exists so canonical URLs and the header link work.
+# site_url: https://YOUR_USERNAME.github.io/research-study-docs/
+# repo_url: https://github.com/YOUR_USERNAME/research-study-docs
+
+site_name: Research study docs
+site_description: Structured notes from papers and thesis-style studies
+site_author: ""
+
+docs_dir: docs
+site_dir: site
+
+# MkDocs excludes /templates/ by default (theme overrides). Re-include our note templates.
+exclude_docs: |
+  !/templates/**
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.sections
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Writing guide: style.md
+  - Papers:
+    - Overview: papers/index.md
+  - Studies:
+    - Overview: studies/index.md
+  - Templates:
+    - Paper reading: templates/paper-reading.md
+    - Thesis study: templates/thesis-study.md
+  - Examples:
+    - Paper reading: examples/example-paper-reading.md
+    - Thesis study: examples/example-thesis-study.md

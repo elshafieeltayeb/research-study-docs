@@ -2,3 +2,6 @@
 *.swp
 *.swo
 .env
+site/
+.venv/
+venv/
