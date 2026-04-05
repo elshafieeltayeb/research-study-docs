@@ -1,6 +1,6 @@
 # Optional: set after the repo exists so canonical URLs and the header link work.
-# site_url: https://YOUR_USERNAME.github.io/research-study-docs/
-# repo_url: https://github.com/YOUR_USERNAME/research-study-docs
+site_url: https://elshafieeltayeb.github.io/research-study-docs/
+repo_url: https://github.com/elshafieeltayeb/research-study-docs
 
 site_name: Research study docs
 site_description: Structured notes from papers and thesis-style studies
