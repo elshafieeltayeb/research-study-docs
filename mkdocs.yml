@@ -65,9 +65,3 @@ nav:
     - Overview: papers/index.md
   - Studies:
     - Overview: studies/index.md
-  - Templates:
-    - Paper reading: templates/paper-reading.md
-    - Thesis study: templates/thesis-study.md
-  - Examples:
-    - Paper reading: examples/example-paper-reading.md
-    - Thesis study: examples/example-thesis-study.md
