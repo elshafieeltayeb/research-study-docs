@@ -39,6 +39,26 @@ It also reviews major challenges and gives future directions (sample efficiency,
 
 ## Copied charts/tables from the paper
 
+### All RL methods summary (from the survey taxonomy)
+
+- **Value-based RL:** learns action values and picks the highest-value action; strongest in discrete decisions.
+  - Common methods in the paper: **Q-Learning, DQN, DDQN, Dueling DQN**
+- **Policy-based RL:** directly optimizes policy; useful for smoother optimization and continuous-control style tasks.
+  - Common methods in the paper: **REINFORCE/PG, TRPO, PPO**
+- **Actor-Critic RL:** combines policy learning (actor) with value estimation (critic); widely used in UAV control and multi-agent settings.
+  - Common methods in the paper: **A3C, DDPG, TD3, SAC, MADDPG, MAPPO**
+
+### Chart: RL methods across UAV parts
+
+| UAV part / mission area | Value-based methods | Policy-based methods | Actor-Critic methods | Notes |
+|---|---|---|---|---|
+| Trajectory planning | Q-Learning, DQN variants | PPO, TRPO | DDPG, TD3, SAC, MADDPG, MAPPO | Navigation/localization, coverage, and communication-aware path optimization |
+| Data collection | DQN / DDQN (discrete scheduling cases) | PPO | DDPG, MADDPG, A3C, SAC | Data efficiency, AoI/freshness, energy-aware collection |
+| Resource scheduling | Q-Learning, Dueling DQN | PPO | DDPG, TD3, A3C, MAPPO | Channel/power/computation allocation under dynamics |
+| Edge computing | Q-Learning, DQN variants | PPO | DDPG, SAC, MADDPG | Caching/offloading optimization and latency reduction |
+
+**How to read this chart:** in this survey, **Actor-Critic appears most frequently** across UAV parts because many UAV problems have continuous controls, mixed objectives, and multi-agent coordination.
+
 ### Table 1 (copied): Navigation performance comparison
 
 Source in paper: **Table 1. UAV Navigation Performance of RL-Based Method and Other Methods**
@@ -84,6 +104,20 @@ Source in paper: **Table 2. UAV Data Collection Performance of RL-Based Method a
 ![Extracted figure 2 from 3769426](assets/3769426/p13_01_R7.png)
 
 ![Extracted figure 3 from 3769426](assets/3769426/p18_01_R7.png)
+
+### Copied chart from paper: all UAV parts
+
+This is the original taxonomy chart from the paper that covers all UAV parts (trajectory planning, data collection, resource scheduling, and edge computing):
+
+![Fig. 1 Taxonomy of RL-based UAV systems](assets/3769426/fig1-taxonomy-all-uav-parts.png)
+
+### Original overview tables by UAV part (copied from paper)
+
+![Table 4 Overview of Value-Based Method for UAV Systems](assets/3769426/table4-value-based-overview.png)
+
+![Table 5 Overview of Policy-Based Method for UAV Systems](assets/3769426/table5-policy-based-overview.png)
+
+![Table 6 Overview of Actor-Critic Algorithms for UAV Systems](assets/3769426/table6-actor-critic-overview.png)
 
 ## Challenges highlighted by the survey
 

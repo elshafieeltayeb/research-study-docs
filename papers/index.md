@@ -17,7 +17,7 @@ Curated list of **titles plus short pointers** you can use to locate PDFs in Sch
 
 ## Your paper summaries
 
-- [First paper summary (3769426): RL methods for UAV systems](first-paper-3769426-summary.md)
+- [1: RL methods for UAV systems](first-paper-3769426-summary.md)
 
 ## Source PDFs in this folder
 
