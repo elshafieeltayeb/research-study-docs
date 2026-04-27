@@ -21,6 +21,4 @@ Curated list of **titles plus short pointers** you can use to locate PDFs in Sch
 
 ## Source PDFs in this folder
 
-- [`3769426.pdf`](3769426.pdf)
-- [`3571728.pdf`](3571728.pdf)
-- [`s41586-023-06419-4.pdf`](s41586-023-06419-4.pdf)
+
