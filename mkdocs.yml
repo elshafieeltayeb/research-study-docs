@@ -63,5 +63,6 @@ nav:
   - Writing guide: style.md
   - Papers:
     - Overview: papers/index.md
+    - First paper summary (A Survey on Reinforcement Learning Methods for UAV Systems): papers/first-paper-3769426-summary.md
   - Studies:
     - Overview: studies/index.md
